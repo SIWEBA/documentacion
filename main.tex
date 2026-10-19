@@ -1,0 +1,175 @@
+\documentclass[letterpaper, 11pt, parskip=half]{scrartcl}
+
+% ── Márgenes y página ──────────────────────────────────────────────────────────
+\usepackage[margin=2cm,bottom=4cm,top=2cm]{geometry}
+
+% ── Fuentes y codificación ─────────────────────────────────────────────────────
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+
+% Idioma
+\usepackage[spanish,activeacute,es-tabla]{babel}
+\decimalpoint
+
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{adjustbox}
+
+\usepackage{xcolor}
+\usepackage{colortbl}
+
+
+\usepackage{scrlayer-scrpage}
+\pagestyle{scrheadings}
+\setlength\headheight{66pt}
+\rohead{\includegraphics[width=1.8cm]{src/logos/UdG.pdf}}
+\lohead{\includegraphics[width=1.6cm]{src/logos/LogoUDGModular.pdf}}
+
+
+\usepackage{ragged2e}
+\usepackage{enumitem}
+\usepackage{csquotes}
+\usepackage{verbatim}
+\usepackage{url}
+
+% Referencias y bibliografía
+% \usepackage[style=apa]{biblatex}
+% \addbibresource{biblio.bib}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{cleveref}
+\crefname{figure}{figura}{figuras}
+\crefname{table}{tabla}{tablas}
+\crefname{section}{sección}{secciones}
+\crefname{subsection}{subsección}{subsecciones}
+
+\usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
+
+\usepackage{lipsum}
+\usepackage{multicol}
+\usepackage[most]{tcolorbox}
+
+% Cajas del manual y marca de contenido editable
+\definecolor{azulmanual}{HTML}{1B3358}
+\definecolor{naranjamanual}{HTML}{C96A00}
+\definecolor{rojomanual}{HTML}{B3261E}
+\definecolor{grismanual}{HTML}{6B7280}
+\newtcolorbox{cajainfo}[1]{enhanced,colback=azulmanual!8,colframe=azulmanual,title=#1,fonttitle=\bfseries\small}
+\newtcolorbox{cajaimportante}[1]{enhanced,colback=naranjamanual!8,colframe=naranjamanual,title=#1,fonttitle=\bfseries\small}
+\newtcolorbox{cajaadvertencia}[1]{enhanced,colback=rojomanual!8,colframe=rojomanual,title=#1,fonttitle=\bfseries\small}
+\newtcolorbox{cajaregla}[1]{enhanced,colback=grismanual!8,colframe=grismanual,title=#1,fonttitle=\bfseries\small}
+\newtcolorbox{cajaeditar}{enhanced,colback=yellow!12,colframe=yellow!60!black,title={Para completar},fonttitle=\bfseries\small}
+\newcommand{\editar}[1]{\textcolor{blue!60!black}{\textit{[#1]}}}
+
+\usepackage{listings}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    backgroundcolor=\color{backcolour},
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    frame=single,
+    framesep=2mm,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=4,
+    numbers=left
+}
+\renewcommand{\lstlistingname}{Listing}
+
+% Diagramas con TikZ 
+% \usepackage{tikz}
+% \usetikzlibrary{arrows.meta, shapes, positioning}
+% \tikzset{>=latex}
+
+%\raggedbottom
+
+\begin{document}
+\author{Primitivo Oyoque Vargas}
+\bfseries
+\begin{center}
+    {\Huge Universidad de Guadalajara}
+\end{center}
+\begin{center}
+    {\Large Centro Universitario de Ciencias Exactas e Ingenierías\\}
+    {\large Licenciatura en Ingeniería en Computación\\}
+    \vspace{0.2cm}
+    División de Tecnologías para la Integración Ciber-Humana\\
+    Departamento de Ciencias Computacionales\\
+    \hspace{0.5cm}
+    
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{src/logos/UdG.pdf}
+\end{figure}
+\vspace{0.3 cm}
+{\Large \textbf{Documentación}}
+\vspace{0.3cm}
+
+{\large Mtro. Luis Ernesto Ayala Hernandez\\}
+
+{\Large \vspace{0.3 cm}
+    {\large \texttt{\textbf{Diseño e implementación de un sistema web para el monitoreo de estaciones
+meteorológicas basadas en Arduino.}\\}}
+    \vspace{0.3 cm}
+    {\small 
+    Primitivo Oyoque Vargas | 219695247\\ 
+    \texttt{primitivo.oyoque6952@alumnos.udg.mx} \\
+    Casandra Jazmín Rodríguez Flores | 219572315\\
+    \texttt{casandra.rodriguez5723@alumnos.udg.mx}\\
+    \vspace{0.2 cm}
+    Mtro. Juan José López Cisneros\\
+    \texttt{juan.lopez@academicos.udg.mx}
+    }
+    \vspace{0.3cm}	
+}
+{\large \rule{150mm}{0.1mm}\\
+    \vspace{0.3cm}
+    Guadalajara, Jalisco, \today
+}
+\end{center}
+\mdseries
+\thispagestyle{empty}
+\clearpage
+
+%Indice
+\tableofcontents
+\clearpage
+
+% Introducción del proyecto
+\input{capitulos/00-Introduccion}
+
+% Documentación general (los Sprints son independientes: sprints/)
+\input{capitulos/01-Proposito}
+\input{capitulos/02-Forma-de-trabajo}
+\input{capitulos/03-Organizacion}
+\input{capitulos/04-Herramientas}
+\input{capitulos/05-Design-Baseline}
+\input{capitulos/06-Registro-de-versiones}
+\input{capitulos/07-Gestion-del-proyecto}
+\input{capitulos/08-Seguimiento-GitHub}
+\input{capitulos/09-Arquitectura-y-documentacion-tecnica}
+\input{capitulos/10-Bitacora-de-decisiones}
+
+\end{document}

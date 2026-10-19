@@ -1,0 +1,14 @@
+\section{Risk Register}
+
+\noindent
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\textwidth}{| c | >{\raggedright\arraybackslash}p{3.8cm} | c | c | >{\raggedright\arraybackslash}X |}
+    \hline
+    \textbf{ID} & \textbf{Riesgo Identificado} & \textbf{Probabilidad} & \textbf{Impacto} & \textbf{Estrategia de Mitigación} \\
+    \hline
+    \textbf{R1} & Fallas de Hardware (Cortocircuito/Quema) & Media & Alto & Probar los circuitos en simuladores antes de conectar físicamente. \\ \hline
+    \textbf{R2} & Caída de Conexión a Internet & Alta & Medio & Programar en el Arduino una rutina de reconexión automática. Si es posible, agregar un módulo de tarjeta SD para guardar datos temporalmente. \\ \hline
+    \textbf{R3} & Datos "Basura" / Sensores descalibrados & Media & Alto & Implementar validaciones en el Backend (filtrar lecturas imposibles). Mandar avisos de error al usuario o al administrador cuando se detecten lecturas anómalas. \\ \hline
+    \textbf{R4} & Seguridad (DDoS y Vulnerabilidades) & Baja & Alto & Usar servicios como Cloudflare para evitar ataques DDoS y asegurar que las consultas a la base de datos estén parametrizadas (evitar inyección SQL). \\ \hline
+    \textbf{R5} & Falta de Presupuesto / Costos de Impresión 3D & Media & Medio & Definir un tope de gastos inicial. Aprovechar los laboratorios de CUCEI si cuentan con servicio de impresión 3D. \\ \hline
+\end{tabularx}

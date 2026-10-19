@@ -1,0 +1,64 @@
+\section{Matriz RACI}
+
+
+% Definición de paleta de colores para la matriz
+\definecolor{phasebg}{RGB}{236, 240, 241}  % Gris muy claro para separar las fases
+\definecolor{colR}{RGB}{253, 227, 227}     % Rojo pastel para Responsable
+\definecolor{colA}{RGB}{214, 234, 248}     % Azul pastel para Aprobador
+\definecolor{colC}{RGB}{252, 243, 207}     % Amarillo pastel para Consultado
+\definecolor{colI}{RGB}{213, 245, 227}     % Verde pastel para Informado
+
+
+\noindent\textbf{Leyenda de Roles RACI:}
+\vspace{0.2cm}
+\begin{itemize}[itemsep=0.1cm]
+    \item \colorbox{colR}{\makebox[0.5cm]{\textbf{R}}} \textbf{Responsable (Responsible):} Quien ejecuta la tarea y desarrolla el trabajo.
+    \item \colorbox{colA}{\makebox[0.5cm]{\textbf{A}}} \textbf{Aprobador (Accountable):} Quien revisa y aprueba el resultado. Es el responsable final.
+    \item \colorbox{colC}{\makebox[0.5cm]{\textbf{C}}} \textbf{Consultado (Consulted):} Brinda información, apoyo técnico o asesoría durante la ejecución.
+    \item \colorbox{colI}{\makebox[0.5cm]{\textbf{I}}} \textbf{Informado (Informed):} Recibe notificaciones sobre los avances o la finalización del entregable.
+\end{itemize}
+\vspace{0.6cm}
+
+\noindent
+\renewcommand{\arraystretch}{1.6} 
+\begin{tabularx}{\textwidth}{
+    | >{\raggedright\arraybackslash}X 
+    | >{\centering\arraybackslash}p{3.2cm} 
+    | >{\centering\arraybackslash}p{3.2cm} 
+    | >{\centering\arraybackslash}p{2.8cm} |
+}
+\hline
+
+{\textbf{Tarea / Entregable}} & 
+{\textbf{Primitivo}} \newline {\footnotesize (Líder / Hard / Back)} & 
+{\textbf{Casandra}} \newline {\footnotesize (Front / Datos)} & 
+{\textbf{Juan José}} \newline {\footnotesize (Asesor)} \\ \hline
+
+% FASE 1 
+\rowcolor{phasebg} \multicolumn{4}{|l|}{\textbf{Fase 1: Planeación y Diseño}} \\ \hline
+1. Definición de requerimientos y sensores & \cellcolor{colR}\textbf{R} & \cellcolor{colR}\textbf{R} & \cellcolor{colA}\textbf{A} \\ \hline
+2. Evaluación y selección de Base de Datos & \cellcolor{colR}\textbf{R} & \cellcolor{colC}\textbf{C} & \cellcolor{colI}\textbf{I} \\ \hline
+3. Diseño de la arquitectura del sistema & \cellcolor{colR}\textbf{R} & \cellcolor{colC}\textbf{C} & \cellcolor{colI}\textbf{I} \\ \hline
+4. Diseño de interfaces web (UI/UX) & \cellcolor{colA}\textbf{A} & \cellcolor{colR}\textbf{R} & \cellcolor{colI}\textbf{I} \\ \hline
+
+% FASE 2 
+\rowcolor{phasebg} \multicolumn{4}{|l|}{\textbf{Fase 2: Hardware (Arduino)}} \\ \hline
+5. Ensamblaje físico de la estación & \cellcolor{colR}\textbf{R / A} & \cellcolor{colI}\textbf{I} & \cellcolor{colI}\textbf{I} \\ \hline
+6. Programación del Arduino (C++) & \cellcolor{colR}\textbf{R / A} & \cellcolor{colC}\textbf{C} & \cellcolor{colI}\textbf{I} \\ \hline
+
+% FASE 3 
+\rowcolor{phasebg} \multicolumn{4}{|l|}{\textbf{Fase 3: Software (Web)}} \\ \hline
+7. Desarrollo del Backend y API & \cellcolor{colR}\textbf{R / A} & \cellcolor{colC}\textbf{C} & \cellcolor{colI}\textbf{I} \\ \hline
+8. Desarrollo del Frontend y gráficos & \cellcolor{colA}\textbf{A} & \cellcolor{colR}\textbf{R} & \cellcolor{colI}\textbf{I} \\ \hline
+
+% FASE 4 
+\rowcolor{phasebg} \multicolumn{4}{|l|}{\textbf{Fase 4: Integración y Pruebas}} \\ \hline
+9. Conexión Arduino $\rightarrow$ Backend $\rightarrow$ Frontend & \cellcolor{colR}\textbf{R} & \cellcolor{colR}\textbf{R} & \cellcolor{colI}\textbf{I} \\ \hline
+10. Pruebas de funcionamiento y calibración & \cellcolor{colR}\textbf{R} & \cellcolor{colR}\textbf{R} & \cellcolor{colC}\textbf{C} \\ \hline
+
+% FASE 5 
+\rowcolor{phasebg} \multicolumn{4}{|l|}{\textbf{Fase 5: Cierre}} \\ \hline
+11. Documentación técnica y manuales & \cellcolor{colR}\textbf{R} & \cellcolor{colR}\textbf{R} & \cellcolor{colC}\textbf{C} \\ \hline
+12. Presentación y entrega final & \cellcolor{colR}\textbf{R} & \cellcolor{colR}\textbf{R} & \cellcolor{colA}\textbf{A} \\ \hline
+
+\end{tabularx}

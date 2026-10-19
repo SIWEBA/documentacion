@@ -1,0 +1,111 @@
+\section{Project Schedule}
+ 
+\begin{table}[H]
+    \centering
+    \caption{Calendario del Proyecto}
+    \begin{tabular}{|l|l|l|l|l|}
+    \hline
+        \# & Actividad & Inicio & Fin & Responsable  \\ \hline
+        1 & Recuperación y revisión de Design Baseline & 1-sep & 10-sep & Ambos  \\ \hline
+        2 & Elaboración de Plan de Trabajo & 8-sep & 17-sep & Ambos  \\ \hline
+        3 & Configuración de GitHub y tablero del proyecto & 10-sep & 17-sep & Ambos  \\ \hline
+        4 & Definición de arquitectura y tecnologías definitivas & 10-sep & 17-sep & Ambos  \\ \hline
+        H1 & Entrega Sprint I - Plan de Trabajo & 17-sep & 17-sep & Ambos  \\ \hline
+        5 & Preparación y conexión del hardware & 18-sep & 27-sep & Primitivo  \\ \hline
+        6 & Configuración inicial del proyecto Django & 18-sep & 25-sep & Casandra  \\ \hline
+        7 & Diseño de la base de datos & 22-sep & 30-sep & Casandra  \\ \hline
+        8 & Integración inicial de sensores con ESP32/Arduino & 25-sep & 5-oct & Primitivo  \\ \hline
+        9 & Desarrollo del backend para recepción de datos & 26-sep & 8-oct & Casandra  \\ \hline
+        10 & Desarrollo inicial de interfaz web/dashboard & 1-oct & 12-oct & Casandra  \\ \hline
+        11 & Comunicación ESP32 -> servidor & 6-oct & 15-oct & Ambos  \\ \hline
+        12 & Integración inicial hardware/software & 12-oct & 17-oct & Ambos  \\ \hline
+        H2 & Entrega Sprint II - Evaluación intermedia & 18-oct & 18-oct & Ambos  \\ \hline
+        13 & Corrección de problemas detectados & 19-oct & 25-oct & Ambos  \\ \hline
+        14 & Consulta de datos actuales e históricos & 19-oct & 29-oct & Casandra  \\ \hline
+        15 & Desarrollo de gráficas y visualización & 23-oct & 1-nov & Casandra  \\ \hline
+        16 & Mejora de captura/transmisión de sensores & 19-oct & 30-oct & Primitivo  \\ \hline
+        17 & Integración del prototipo completo & 30-oct & 4-nov & Ambos  \\ \hline
+        18 & Pruebas funcionales preliminares & 3-nov & 6-nov & Ambos  \\ \hline
+        19 & Documentación del estado de construcción & 4-nov & 8-nov & Ambos  \\ \hline
+        H3 & Entrega Sprint III - Transición a Pruebas & 8-nov & 8-nov & Ambos  \\ \hline
+        20 & Pruebas de integración y comunicación & Nov - dic 2026 & dic-26 & Ambos  \\ \hline
+        21 & Pruebas de almacenamiento y consistencia de datos & ene-27 & ene-27 & Casandra  \\ \hline
+        22 & Pruebas prolongadas de sensores/estación & Ene - feb 2027 & feb-27 & Primitivo  \\ \hline
+        23 & Corrección de problemas encontrados & Feb - mar 2027 & mar-27 & Ambos  \\ \hline
+        24 & Mejoras de interfaz y experiencia de usuario & Feb - mar 2027 & mar-27 & Casandra  \\ \hline
+        25 & Validación integral del sistema & abr-27 & abr-27 & Ambos  \\ \hline
+        26 & Correcciones finales & Abr - may 2027 & may-27 & Ambos  \\ \hline
+        27 & Documentación técnica final & Abr - may 2027 & may-27 & Ambos  \\ \hline
+        H4 & Sistema terminado & may-27 & may-27 & Ambos  \\ \hline
+    \end{tabular}
+\end{table}
+ 
+\subsection{Diagrama de Gantt}
+
+\begin{table}[ht]
+\centering
+\caption{Cronograma de actividades del proyecto}
+\label{tab:cronograma}
+
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\textbf{Actividad} & \textbf{Responsable} & \textbf{Sep} & \textbf{Oct} &
+\textbf{Nov} & \textbf{Dic} & \textbf{Ene2027} & \textbf{Feb2027} &
+\textbf{Mar2027} & \textbf{Abr2027} & \textbf{May2027} \\ \hline
+
+Planificación y Design Baseline
+& Ambos & \cellcolor{gray!40} & & & & & & & & \\ \hline
+
+Configuración GitHub
+& Ambos & \cellcolor{gray!40} & & & & & & & & \\ \hline
+
+Desarrollo inicial Django
+& Casandra & \cellcolor{blue!40} & \cellcolor{blue!40} & & & & & & & \\ \hline
+
+Diseño de base de datos
+& Casandra & \cellcolor{blue!40} & \cellcolor{blue!40} & & & & & & & \\ \hline
+
+Integración de sensores
+& Primitivo & \cellcolor{green!40} & \cellcolor{green!40} & & & & & & & \\ \hline
+
+Comunicación ESP32--Servidor
+& Ambos & & \cellcolor{gray!40} & & & & & & & \\ \hline
+
+Dashboard web
+& Casandra & & \cellcolor{blue!40} & \cellcolor{blue!40} & & & & & & \\ \hline
+
+Integración del prototipo
+& Ambos & & \cellcolor{gray!40} & \cellcolor{gray!40} & & & & & & \\ \hline
+
+\textbf{$\blacklozenge$ Sprint II}
+& Ambos & & \textbf{18} & & & & & & & \\ \hline
+
+Pruebas preliminares
+& Ambos & & & \cellcolor{gray!40} & & & & & & \\ \hline
+
+\textbf{$\blacklozenge$ Sprint III}
+& Ambos & & & \textbf{8} & & & & & & \\ \hline
+
+Integración y pruebas
+& Ambos & & & \cellcolor{gray!40} & \cellcolor{gray!40} &
+\cellcolor{gray!40} & & & & \\ \hline
+
+Corrección y mejoras
+& Ambos & & & & & \cellcolor{gray!40} &
+\cellcolor{gray!40} & \cellcolor{gray!40} & & \\ \hline
+
+Validación integral
+& Ambos & & & & & & & \cellcolor{gray!40} &
+\cellcolor{gray!40} & \\ \hline
+
+Documentación final
+& Ambos & & & & & & & & \cellcolor{gray!40} &
+\cellcolor{gray!40} \\ \hline
+
+\textbf{$\blacklozenge$ Proyecto terminado}
+& Ambos & & & & & & & & & \textbf{Mayo} \\ \hline
+
+\end{tabular}%
+}
+\end{table}

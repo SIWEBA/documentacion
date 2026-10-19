@@ -1,0 +1,162 @@
+\documentclass[letterpaper, 11pt, parskip=half]{scrartcl}
+
+% ── Márgenes y página ──────────────────────────────────────────────────────────
+\usepackage[margin=2cm,bottom=4cm,top=2cm]{geometry}
+
+% ── Fuentes y codificación ─────────────────────────────────────────────────────
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+
+% Idioma
+\usepackage[spanish,activeacute,es-tabla]{babel}
+\decimalpoint
+
+\usepackage{graphicx}
+\graphicspath{{../../src/logos/}}
+\usepackage{float}
+\usepackage{caption}
+
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{adjustbox}
+
+\usepackage{colortbl}
+
+\usepackage{scrlayer-scrpage}
+\pagestyle{scrheadings}
+\setlength\headheight{66pt}
+\rohead{\includegraphics[width=1.8cm]{UdG.pdf}}
+\lohead{\includegraphics[width=1.6cm]{LogoUDGModular.pdf}}
+
+\usepackage{ragged2e}
+\usepackage{enumitem}
+\usepackage{csquotes}
+\usepackage{verbatim}
+\usepackage{url}
+
+\usepackage{hyperref}
+\usepackage{amssymb}
+\usepackage{cleveref}
+\crefname{figure}{figura}{figuras}
+\crefname{table}{tabla}{tablas}
+\crefname{section}{sección}{secciones}
+\crefname{subsection}{subsección}{subsecciones}
+
+\usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
+
+\usepackage{listings}
+
+\usepackage{lipsum}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    backgroundcolor=\color{backcolour},
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    frame=single,
+    framesep=2mm,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=4,
+    numbers=left
+}
+\renewcommand{\lstlistingname}{Listing}
+
+\newcommand{\editar}[1]{\textcolor{blue!60!black}{\textit{[#1]}}}
+
+\begin{document}
+\author{Primitivo Oyoque Vargas}
+\bfseries
+\begin{center}
+    {\Huge Universidad de Guadalajara}
+\end{center}
+\begin{center}
+    {\Large Centro Universitario de Ciencias Exactas e Ingenierías\\}
+    {\large Licenciatura en Ingeniería en Computación\\}
+    \vspace{0.2cm}
+    División de Tecnologías para la Integración Ciber-Humana\\
+    Departamento de Ciencias Computacionales\\
+    \hspace{0.5cm}
+    
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{UdG.pdf}
+\end{figure}
+\vspace{0.3 cm}
+{\Large \textbf{Laboratorio Abierto: Construcción} - IL373\\}
+\vspace{0.3cm}
+
+{\Large \vspace{0.3 cm}
+    {\large \textbf{\texttt{Sprint I – Documento de protocolo de solución}} \\}
+    {\large \texttt{\textbf{Diseño e implementación de un sistema web para el monitoreo de estaciones
+meteorológicas basadas en Arduino.}\\}}
+    \vspace{0.3 cm}
+    {\small 
+    Primitivo Oyoque Vargas | 219695247\\ 
+    \texttt{primitivo.oyoque6952@alumnos.udg.mx} \\
+    Casandra Jazmín Rodríguez Flores | 219572315\\
+    \texttt{casandra.rodriguez5723@alumnos.udg.mx}\\
+    \vspace{0.2 cm}
+    Mtro. Juan José López Cisneros\\
+    \texttt{juan.lopez@academicos.udg.mx}
+    }
+    \vspace{0.3cm}	
+}
+{\large \rule{150mm}{0.1mm}\\
+    \vspace{0.3cm}
+    Guadalajara, Jalisco, 17 de septiembre de 2026
+}
+\end{center}
+\mdseries
+\thispagestyle{empty}
+\clearpage
+
+
+% ─────────────────────────────────────────────────────────────────────────────
+\begin{comment}
+    
+\section*{Datos Generales}
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.4}
+\begin{tabularx}{\textwidth}{|>{\bfseries}p{4cm}|X|}
+\hline
+\rowcolor[gray]{0.88} Proyecto & Diseño e implementación de un sistema web para el monitoreo de estaciones
+meteorológicas basadas en Arduino\\
+\hline
+Materia & Laboratorio Abierto: Diseño D05 (IL372) \\
+\hline
+\rowcolor[gray]{0.95} Duración del Sprint IV & Semana 14 \\
+\hline
+\rowcolor[gray]{0.95} Asesor & Mtro. Juan José López Cisneros \\
+\hline
+\end{tabularx}
+\end{table}
+
+\end{comment}
+
+% Los documentos viven en project-management/ y se incluyen aquí (fuente única)
+\input{../../project-management/charter/charter}
+\input{../../project-management/wbs/wbs}
+\input{../../project-management/raci/raci}
+\input{../../project-management/risks/risks}
+\input{../../project-management/schedule/schedule}
+
+\end{document}

@@ -1,0 +1,7 @@
+.auxfiles
+
+
+*.log
+*.aux
+*.toc
+*.out
