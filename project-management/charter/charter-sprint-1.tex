@@ -1,0 +1,64 @@
+\section{Project Charter}
+
+\subsection{Información general}
+\begin{itemize}
+    \item \textbf{Nombre del Proyecto}\\
+    Diseño e implementación de un sistema web para el monitoreo de estaciones meteorológicas basadas en Arduino.
+
+    \item \textbf{Fecha de Emisión}\\
+    20 de abril de 2026 / Actualización: Mayo 2026.
+
+    \item \textbf{Asesor Académico}\\
+    Dr. Juan José López Cisneros. 
+
+    \item \textbf{Líder de Proyecto / Hardware}\\
+    Primitivo Oyoque Vargas. 
+
+    \item \textbf{Desarrolladora Web / Analista}\\
+    Casandra Jazmín Rodríguez Flores.
+\end{itemize}
+
+\subsection{Propósito y Justificación}
+
+En la Zona Metropolitana de Guadalajara (ZMG) existen más de 363 sitios de inundación recurrente. Sin embargo, la información meteorológica local se encuentra aislada, inaccesible o restringida por plataformas comerciales propietarias con costos elevados (superiores a $\sim$ \$20,000) y barreras de registro obligatorio. 
+Este proyecto nace para democratizar el acceso a los datos climáticos locales mediante el diseño e implementación de una plataforma web abierta e interoperable de bajo costo, alimentada por nodos de monitoreo basados en Arduino/ESP32. 
+
+\subsection{Objetivos del Proyecto}
+\begin{itemize}
+    \item \textbf{Objetivo General}\\
+    Desarrollar un sistema de monitoreo meteorológico de bajo costo basado en Arduino/ESP32 capaz de recolectar, procesar, almacenar y visualizar datos ambientales en tiempo real e históricos a través de una plataforma web de acceso libre y colaborativo. 
+ 
+    \item \textbf{Objetivos específicos}
+    \begin{enumerate}
+        \item Diseñar, construir y ensamblar la estación meteorológica física con microcontroladores (ESP32/Arduino) y sensores ambientales.
+        \item Desarrollar el backend y frontend en Django / Django REST Framework con PostgresDB como base de datos y TimescaleDB para gestionar los datos de una mejor manera.
+        \item Establecer la comunicación automática y periódica entre la estación física y la plataforma web vía Wi-Fi mediante protocolos HTTP/JSON. 
+    \end{enumerate}
+\end{itemize}
+
+\subsection{Alcance del Proyecto}
+
+\begin{itemize}
+    \item \textbf{Incluido en el Alcance (In Scope):}
+    \begin{itemize}
+        \item Ensamblaje y calibración básica de la estación meteorológica (ESP32/Arduino + sensores de temperatura, humedad y presión).
+        \item Plataforma web en Django con API de ingesta de datos, base de datos y dashboard público de visualización sin necesidad de login/registro.
+        \item Transmisión continua de telemetría desde el hardware hacia la web.
+    \end{itemize}
+
+    \item \textbf{No Incluido en el Alcance (Out of Scope):}
+    \begin{itemize}
+        \item Despliegue en servidores de alta producción de pago.
+        \item Integración con APIs meteorológicas comerciales de terceros.
+        \item Certificación o validación científica de grado industrial para las lecturas.
+        \item Módulo de predicción meteorológica automatizada o alertas de emergencia.
+        \item Almacenamiento local mediante tarjeta SD en la primera versión.
+    \end{itemize}
+\end{itemize}
+
+\subsection{Criterios de Éxito}
+\begin{itemize}
+    \item Estación física transmitiendo datos con una latencia menor a 60 segundos entre medición y visualización web. 
+    \item Disponibilidad del portal web de al menos 95\% durante el periodo de pruebas. 
+    \item Almacenamiento e integridad de al menos 24 horas continuas de registros históricos sin pérdida de datos. 
+\end{itemize}

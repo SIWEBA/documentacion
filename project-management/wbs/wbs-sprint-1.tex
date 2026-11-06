@@ -1,0 +1,69 @@
+\section{Work Breakdown Structure (WBS)}
+
+\clearpage
+
+\thispagestyle{empty} 
+
+\begin{figure}[htbp]
+    \centering
+    \resizebox{!}{0.85\textheight}{%
+    \begin{forest}
+        for tree={
+            draw=black,
+            thick,
+            align=left,
+            font=\sffamily,
+            grow=0,
+            child anchor=west,
+            parent anchor=east,
+            edge path={
+                \noexpand\path[\forestoption{edge}, thick, -latex]
+                (!u.parent anchor) -- +(10pt,0) |- (.child anchor)\forestoption{edge label};
+            },
+            l sep=8mm,        % Separación entre columnas
+            s sep=2mm,        % Separación vertical entre cajas
+            inner sep=4pt     % Espacio interno para que el texto respire
+        }% Nivel Raíz
+        [1. Sistema de Monitoreo\\Meteorológico Abierto, font=\sffamily\bfseries, align=center% FASE 1
+            [1.1 Gestión del\\Proyecto
+                [1.1.1 Ficha de Arranque y Protocolo]
+                [1.1.2 Plan de Trabajo y Cronograma]
+                [1.1.3 Repo GitHub y Tablero]
+                [1.1.4 Revisiones y Pitch]
+            ]% FASE 2
+            [1.2 Hardware y\\Firmware
+                [1.2.1 Adquisición de Componentes]
+                [1.2.2 Integración de Sensores]
+                [1.2.3 Desarrollo del Firmware]
+                [1.2.4 Módulo Wi-Fi y HTTP]
+                [1.2.5 Pruebas de Calibración]
+            ] % FASE 3
+            [1.3 Plataforma Web\\y Backend
+                [1.3.1 Entorno Django]
+                [1.3.2 Diseño Base de Datos]
+                [1.3.3 Desarrollo API REST]
+                [1.3.4 Validación de Datos]
+                [1.3.5 Entornos de Despliegue]
+            ]% FASE 4
+            [1.4 Frontend e\\Interfaz UI/UX
+                [1.4.1 Diseño UI/UX Cero-Fricción]
+                [1.4.2 Visualización Tiempo Real]
+                [1.4.3 Panel de Registros]
+                [1.4.4 Integración de Mapas]
+            ]% FASE 5
+            [1.5 Integración\\y Pruebas
+                [1.5.1 Pruebas HW-Servidor]
+                [1.5.2 Pruebas Almacenamiento]
+                [1.5.3 Evaluación Latencia]
+                [1.5.4 Corrección de Errores]
+            ] % FASE 6
+            [1.6 Documentación\\y Cierre
+                [1.6.1 Manual de Replicación]
+                [1.6.2 Ensayo de Defensa]
+                [1.6.3 Entrega del Sistema]
+            ]
+        ]
+    \end{forest}
+    }
+\end{figure}
+\clearpage

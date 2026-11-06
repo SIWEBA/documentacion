@@ -1,4 +1,4 @@
-# SIWEBA — Backend Django
+# SIWEBA — Documentación del proyecto
 
 ## 1. Información General del Proyecto
 
@@ -15,7 +15,7 @@ Crear una estación meteorológica funcional con Arduino y una plataforma web pa
 En desarrollo de una primera versión funcional que corresponderá a un prototipo mínimo viable, el cual estará enfocado en la recolección, almacenamiento, visualización y consulta de datos meteorológicos.
 
 ### Versión o Sprint actual
-Sprint I
+Sprint II: seguimiento, evaluación y adaptación.
 
 ---
 
@@ -31,9 +31,15 @@ Sprint I
 
 ## 3. Estructura del Proyecto
 
-### Estructura general del repositorio
+### Repositorios del proyecto
 
-El repositorio está organizado en carpetas que separan el backend, el frontend, la documentación del proyecto y los modelos 3D:
+La documentación de este repositorio corresponde al proyecto SIWEBA en conjunto, que se organiza en tres repositorios independientes:
+
+- [documentacion](https://github.com/SIWEBA/documentacion): documentación general, de gestión y de los sprints.
+- [django-backend](https://github.com/SIWEBA/django-backend): API, lógica del servidor y documentación técnica del backend.
+- [django-frontend](https://github.com/SIWEBA/django-frontend): aplicación web y panel de visualización.
+
+Al clonar los tres repositorios dentro de una misma carpeta de trabajo, la estructura general es:
 
 ```text
 SIWEBA/
@@ -55,16 +61,15 @@ SIWEBA/
     └── src/             # Recursos de la documentación, como logotipos
 ```
 
-En ambos proyectos Django, `manage.py` permite ejecutar tareas administrativas y las carpetas `migrations/` de sus aplicaciones contienen los cambios versionados del esquema de datos. El backend y el frontend se mantienen en carpetas independientes; la documentación técnica de cada uno está dentro de su respectivo proyecto.
+En ambos proyectos Django, `manage.py` permite ejecutar tareas administrativas y las carpetas `migrations/` de sus aplicaciones contienen los cambios versionados del esquema de datos. El backend y el frontend se mantienen en repositorios independientes.
 
 ---
 
 ## 4. Instrucciones para consultar o reproducir el proyecto
 
-**Importante:** Para comenzar, esto solo es el Backend del proyecto. 
-El resto del proyecto se encuentra en la organización principal del repositorio: [Organización SIWEBA en GitHub](https://github.com/orgs/SIWEBA/repositories).
+Este repositorio reúne la documentación del proyecto completo. Para consultar el código, visita los repositorios de backend y frontend indicados arriba o la [organización SIWEBA en GitHub](https://github.com/orgs/SIWEBA/repositories).
 
-
+Para consultar la documentación en PDF:
 1. Asegúrate de tener LuaLaTeX instalado en tu sistema.
 2. Abre una terminal y navega hasta el directorio de esta documentación.
 3. Ejecuta el comando `lualatex main.tex` para compilar el documento.
