@@ -6,7 +6,7 @@
 Diseño e implementación de un sistema web para el monitoreo de estaciones meteorológicas basadas en Arduino.
 
 ### Breve descripción
-La solución consiste en el desarrollo de una plataforma web que permite integrar estaciones meteorológicas de usuarios e instituciones en una red colaborativa[cite: 4]. En esta plataforma, los datos generados (temperatura, humedad, presión atmosférica, etc.) pueden ser compartidos y consultados de manera accesible y en tiempo real[cite: 1, 4]. El sistema se compone de dos subsistemas interconectados: una estación meteorológica de hardware basada en Arduino y una plataforma web de software desarrollada en Django para almacenar, validar y visualizar los datos.
+La solución consiste en el desarrollo de una plataforma web que permite integrar estaciones meteorológicas de usuarios e instituciones en una red colaborativa. En esta plataforma, los datos generados (temperatura, humedad, presión atmosférica, etc.) pueden ser compartidos y consultados de manera accesible y en tiempo real. El sistema se compone de dos subsistemas interconectados: una estación meteorológica de hardware basada en Arduino y una plataforma web de software desarrollada en Django para almacenar, validar y visualizar los datos.
 
 ### Objetivo general
 Crear una estación meteorológica funcional con Arduino y una plataforma web para almacenar y consultar libremente los datos que esta recolecta.
